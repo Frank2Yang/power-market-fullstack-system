@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "name": "power-market-system",
   "builds": [
     {
       "src": "server.js",
@@ -10,7 +9,7 @@
       "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "out"
+        "distDir": ".next"
       }
     }
   ],
@@ -21,15 +20,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/out/$1"
+      "dest": "/$1"
     }
-  ],
-  "functions": {
-    "server.js": {
-      "maxDuration": 30
-    }
-  },
-  "env": {
-    "NODE_ENV": "production"
-  }
+  ]
 }
