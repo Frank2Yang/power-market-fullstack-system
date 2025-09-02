@@ -9,8 +9,7 @@
     "client": "next dev -p 3001",
     "build": "next build",
     "start": "node server.js",
-    "build-client": "next build && next export",
-    "vercel-build": "npm run build-client"
+    "vercel-build": "next build"
   },
   "keywords": [
     "电力市场",
