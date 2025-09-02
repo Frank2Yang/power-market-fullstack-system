@@ -4,11 +4,9 @@
   "description": "电力市场预测与投标优化系统 - 基于2025年真实数据的全栈应用",
   "main": "server.js",
   "scripts": {
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "server": "nodemon server.js",
-    "client": "next dev -p 3001",
+    "dev": "next dev",
     "build": "next build",
-    "start": "node server.js",
+    "start": "next start",
     "vercel-build": "next build"
   },
   "keywords": [
